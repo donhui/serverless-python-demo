@@ -1,0 +1,12 @@
+component: scf
+name: serverless-python-demo
+app: serverless-python-demo
+inputs:
+  src: ./
+  description: serverless python demo
+  handler: index.main_handler
+  runtime: Python3.6
+  namespace: default
+  region: ap-guangzhou
+  memorySize: 128
+  timeout: 3
