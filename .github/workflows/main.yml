@@ -2,7 +2,7 @@ name: build and push serverless application
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
