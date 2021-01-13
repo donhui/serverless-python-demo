@@ -1,0 +1,17 @@
+name: build and push serverless application
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: EnvSetup
+      run: |
+        touch .env
+        echo TENCENT_SECRET_ID=${{TENCENT_SECRET_ID}} >> .env
+        echo TENCENT_SECRET_KEY=${{TENCENT_SECRET_KEY} >> .env
