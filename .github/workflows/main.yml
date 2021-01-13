@@ -1,11 +1,11 @@
-name: build and push serverless application
+name: build and deploy serverless application
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build:
+  build and deploy:
     runs-on: ubuntu-latest
     
     steps:
