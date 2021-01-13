@@ -15,3 +15,9 @@ jobs:
         touch .env
         echo TENCENT_SECRET_ID=${{secrets.TENCENT_SECRET_ID}} >> .env
         echo TENCENT_SECRET_KEY=${{secrets.TENCENT_SECRET_KEY}} >> .env
+    - name: serverless deploy
+      uses: serverless/github-action@master
+      with:
+          args: deploy
+      env:
+         TZ: Asia/Shanghai
