@@ -13,5 +13,5 @@ jobs:
     - name: EnvSetup
       run: |
         touch .env
-        echo TENCENT_SECRET_ID=${{TENCENT_SECRET_ID}} >> .env
-        echo TENCENT_SECRET_KEY=${{TENCENT_SECRET_KEY} >> .env
+        echo 'TENCENT_SECRET_ID=${{TENCENT_SECRET_ID}}' >> .env
+        echo 'TENCENT_SECRET_KEY=${{TENCENT_SECRET_KEY}' >> .env
