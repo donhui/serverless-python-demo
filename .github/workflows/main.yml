@@ -36,3 +36,4 @@ jobs:
           args: deploy
       env:
          TZ: Asia/Shanghai
+         GLOBAL_ACCELERATOR_NA: true
